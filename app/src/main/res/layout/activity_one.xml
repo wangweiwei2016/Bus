@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hqu.weil.Activity_One">
+
+    <RelativeLayout
+        android:id="@+id/ly_top_bar_one"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_topbar">
+
+        <TextView
+            android:id="@+id/txt_topbar_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="订票"
+            android:textColor="@color/text_topbar"
+            android:textSize="18sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/div_white"
+            />
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/rg_tab_bar_one"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/ly_top_bar_one"
+        android:background="@color/bg_white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_ticket_one"
+            style="@style/tab_menu_item"
+            android:text="@string/tab_menu_ticket_one"
+            />
+        <RadioButton
+            android:id="@+id/rb_line_one"
+            style="@style/tab_menu_item"
+            android:text="@string/tab_menu_ticket_two"
+            />
+        <RadioButton
+            android:id="@+id/rb_service_one"
+            style="@style/tab_menu_item"
+            android:text="@string/tab_menu_ticket_three"
+            />
+        <!--<RadioButton-->
+        <!--android:id="@+id/rb_my_one"-->
+        <!--style="@style/tab_menu_item"-->
+        <!--android:drawableTop="@drawable/tab_menu_setting"-->
+        <!--android:text="@string/tab_menu_my"-->
+        <!--/>-->
+    </RadioGroup>
+
+
+    <View
+        android:id="@+id/div_tab_bar_one"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/rg_tab_bar"
+        android:background="@color/div_white"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rg_tab_bar_one"/>
+
+</RelativeLayout>
+

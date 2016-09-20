@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/open_standard_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标准地图"/>
+
+    <Button
+        android:id="@+id/open_satellite_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卫星地图"/>
+    <Button
+        android:id="@+id/open_night_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="夜间地图"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+       <CheckBox
+           android:id="@+id/traffic_box"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="交通状况"/>
+        <!--<CheckBox-->
+            <!--android:id="@+id/buildings_box"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="建筑物"/>-->
+        <!--<CheckBox-->
+            <!--android:id="@+id/maptext_box"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="地图文本"/>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/my_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定位"/>
+    </LinearLayout>
+
+</LinearLayout>
